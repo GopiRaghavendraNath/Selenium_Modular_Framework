@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="store-demo-qa" parallel="tests" verbose="1">
+	<listeners>
+		<listener class-name="com.demoqa.listeners.MyTestngListener" />
+		<listener class-name="com.demoqa.listeners.ExtentReporterNG"></listener>
+	</listeners>
+
+	<test name="Test-login-first in store-demo-qa ">
+		<!-- <parameter name="browser" value="Firefox" /> -->
+		<classes>
+			<class name="com.storedemoqa.testcases.BaseTestCase">
+			</class>
+		</classes>
+	</test>
+	<test name="Another-Test-login-first in store-demo-qa ">
+		<!-- <parameter name="browser" value="Firefox" /> -->
+		<classes>
+			<class name="com.storedemoqa.testcases.BaseTestCase">
+			</class>
+		</classes>
+	</test>
+
+</suite>
